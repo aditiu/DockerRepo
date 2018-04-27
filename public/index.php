@@ -6,7 +6,7 @@ require '../vendor/autoload.php';
 
 $app = new \Slim\App;
 $app->get('/', function (Request $request, Response $response) {
-    $response->getBody()->write("Hello world for testing");
+    $response->getBody()->write("Hello world for testing and updated from local windows host and tested through jenkin build on docker environment");
 
     return $response;
 });
